@@ -148,7 +148,7 @@ function App() {
                 className="bg absolute scale-[1.6] rotate-[-3deg] top-0 left-0 w-full h-screen object-cover"
               />
               <div className="text text-white flex flex-col gap-2 absolute top-20 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[-10deg]">
-                <h1 className="text-[9rem] leading-none -ml-40">grand</h1>
+                <h1 className="text-[9rem] leading-none -ml-40">Grand</h1>
                 <h1 className="text-[10rem] leading-none ml-20">theft</h1>
                 <h1 className="text-[9rem] leading-none -ml-40">auto</h1>
               </div>
