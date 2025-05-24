@@ -154,7 +154,7 @@ function App() {
                 </div>
           
                 <h3 
-                  className="relative text-3xl mt-[-4px] leading-none text-white">
+                  className="relative text-3xl mt-[-4px] cursor-pointer leading-none text-white">
                   Rockstar
                 {/* {dropdownOpen && (
                 <ul className="absolute -left-8 text-2xl mt-4 w-48 bg-zinc-100 text-black rounded-sm shadow-lg z-10">
@@ -182,7 +182,7 @@ function App() {
                   </div>
                 )}
               </div>
-              <div className="text-white text-3xl mt-[-3px] cursor-pointer relative right-0 flex items-center gap-2">
+              <div onClick={()=>setShowTrailer(true)} className="text-white text-3xl mt-[-3px] cursor-pointer relative right-0 flex items-center gap-2">
                 <i onClick={()=>setShowTrailer(true)} className="ri-play-circle-line"></i> 
                 Tap to Play
               </div>
@@ -213,7 +213,7 @@ function App() {
             </div>
             <div className="btmbar text-white w-full py-11 px-10 absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent">
               <div className="flex gap-4 items-center">
-                <i className="text-2xl ri-arrow-down-line"></i>
+                <i onClick={scrollToBottom} className=" cursor-pointer text-2xl ri-arrow-down-line"></i>
                 <h3 onClick={scrollToBottom} className="cursor-pointer text-m font-[Helvetica_Now_Display]">
                   Scroll Down
                 </h3>
@@ -262,7 +262,7 @@ function App() {
             </div>
           </div>
           <div className="fixed flex gap-4 items-center z-50 bottom-10 left-10">
-              <i className="text-2xl text-white ri-arrow-up-line"></i>
+              <i onClick={scrollToTop} className="text-2xl cursor-pointer text-white ri-arrow-up-line"></i>
               <h3 onClick={scrollToTop} className="cursor-pointer text-white text-m font-[Helvetica_Now_Display]">
                 Back to Top
               </h3>
